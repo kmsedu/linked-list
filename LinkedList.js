@@ -124,31 +124,3 @@ function LinkedList () {
 function Node (value = null, nextNode = null) {
   return { value, nextNode }
 }
-
-const testValues = [1, 2, 3, 4, 5]
-
-const testList = LinkedList()
-
-testList.append(1)
-testList.append(2)
-testList.append(3)
-testList.append(4)
-testList.append(5)
-
-testList.prepend('poop')
-console.log(testList.size())
-
-console.log(testList.toString())
-testList.pop()
-console.log(testList.toString())
-
-console.log(testList.contains('poopy'))
-console.log(testList.find(3))
-
-testList.insertAt('poopa', 2)
-
-console.log(testList.toString())
-
-testList.removeAt(2)
-
-console.log(testList.toString())
